@@ -440,8 +440,9 @@ CONFIG_PCI_MSM=y
 # CONFIG_PCI_HOST_THUNDER_ECAM is not set
 
 #
-# FRanken Features for cool cherry pickers
+# Franken Features for cool cherry pickers
 #
+CONFIG_IOSCHED_TRIPNDROID=y
 CONFIG_BOEFFLA_WL_BLOCKER=y
 CONFIG_CPU_INPUT_BOOST=y
 CONFIG_INPUT_BOOST_FREQ_LP=1056000
