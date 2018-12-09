@@ -1925,7 +1925,7 @@ bad_fork_cleanup_count:
 bad_fork_free:
 	p->state = TASK_DEAD;
 	put_task_stack(p);
-	free_task(p);https://github.com/freak07/Kirisakura_bluecross
+	free_task(p);
 fork_out:
 	return ERR_PTR(retval);
 }
