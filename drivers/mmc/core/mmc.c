@@ -555,9 +555,13 @@ static int mmc_decode_ext_csd(struct mmc_card *card, u8 *ext_csd)
 			card->cid.year += 16;
 
 		/* check whether the eMMC card supports BKOPS */
+<<<<<<< HEAD
 		if (!mmc_card_broken_hpi(card) &&
 		    (ext_csd[EXT_CSD_BKOPS_SUPPORT] & 0x1) &&
 				card->ext_csd.hpi) {
+=======
+		if (ext_csd[EXT_CSD_BKOPS_SUPPORT] & 0x1) {
+>>>>>>> rc/linux-4.9.y
 			card->ext_csd.bkops = 1;
 			card->ext_csd.bkops_en = ext_csd[EXT_CSD_BKOPS_EN];
 			card->ext_csd.raw_bkops_status =
